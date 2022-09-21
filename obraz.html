@@ -1,0 +1,55 @@
+<html>
+ <head>
+ <script type="text/javascript">
+ function okno_zamknij_Tański()
+ {
+ window.close()
+ }
+ </script>
+ </head>
+<body>
+    Język JavaScript został opracowany w 1995 roku <br>
+    JavaScript jest językiem programowania obsługujący skrypty <br>
+    Kod JavaScript jest wykonywany przez przeglądarkę <br>
+    Ze względów bezpieczeństwa JavaScript ma znacznie ograniczone
+    uprawnienia dostępu do zasobów komputera <br>
+    JavaScript umożliwia lub wymusza stosowanie obiektowych metod programowania. <br>
+
+    &lsaquo; input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen(' ')" &rsaquo; <br>
+    "input" stosuje się w obrębie formularzy. Znacznik ten tworzy zarówno jednowierszowe pola tekstowe, pola opcji (checkbox) i pola przełączników (radio button)<br>
+    "type" Generuje jednowierszowe pole do wprowadzania tekstu.<br>
+    "name" Atrybut definiuje nazwę elementu<br>
+    "value" Tekst, który wpisujemy do elementu input , określamy jako wartość (ang. value) tego elementu.<br>
+    "onclick" Definiuje reakcję na zdarzenie pochodzące od myszy i polegające na kliknięciu.<br>
+
+    window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200"); -Standardowa konstrukcja otwierająca okno<br>
+    toolbar=no -wartość yes lub no (1 lub 0): pokazuje lub ukrywa standardowy pasek narzędzi<br>
+    directories=no, -wartość yes lub no (1 lub 0): pokazuje lub ukrywa przyciski katalogów<br>
+    menubar=no, -wartość yes lub no (1 lub 0): pokazuje lub ukrywa menu przeglądarki<br>
+    height=280, -wartość w pixelach : ustawia wysokość okna<br>
+    width=160, -wartość w pixelach : ustawia szerokość okna<br>
+    top=200, -wartość w pixelach : ustawia położenie okna względem góry ekranu<br>
+    left=200, -wartość w pixelach : ustawia położenie okna względem lewej strony ekranu<br>
+    window.close() -Standardowa konstrukcja zamykająca okno<br>
+    <!DOCTYPE html>
+<html lang="pl">
+ <head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <meta http-equiv="Content-Script-Type" content="text/javascript">
+ <title>Moja strona WWW</title>
+ <script type="text/javascript">
+ function onclickHandler()
+ {
+ alert('Akapit został kliknięty!');
+ }
+ </script>
+ </head>
+ <body>
+ <p onclick="onclickHandler();">Kliknij ten akapit,
+ a pojawi się okno dialogowe.</p>
+ </body>
+</html>
+ <img src="obraz1.gif" />
+ <input type="button" value="zamknij okno" onclick="okno_zamknij_Tański()"/>
+</body>
+</html>
